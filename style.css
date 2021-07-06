@@ -1,0 +1,108 @@
+a{
+    text-decoration: none;
+    color:rgb(0, 0, 0)
+}
+
+
+.mainone{
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.ico{
+    margin-left: 10px;    
+}
+
+.menu{
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.comment{
+    display: flex;
+}
+
+.face{
+    padding-top: 35px;
+    width: 35%;
+    height: 35%;
+}
+
+.text{
+    padding: 120px;
+    font-family: Georgia, serif;
+    padding-bottom: 200px;
+    font-style:italic;
+}
+
+.ham{
+    display: flex;
+    margin-right: 100px;
+}
+
+.hamimg{
+    width: 20%;
+    height: 20%;
+    padding: 70px;
+
+}
+
+.hamtext{
+    padding: 120px;
+    font-family: Georgia, serif;
+    
+}
+
+.hambutton{
+    margin-top: 150px;
+    width: 70px;
+    height: 60px;
+}
+
+.warn{
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, serif;
+}
+
+.message{
+    margin-left: 560px;
+    margin-top: 25px;
+}
+
+.inputValue{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 40px;
+}
+
+   
+.soonTimer .timer{    
+    margin-top: 40px;
+    margin-left: 250px;
+    padding-left: 95px;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    position: relative;
+    width: 50%;
+}
+    
+.timerItem span{
+    display: block;
+    font-size: 56px;
+}
+
+
+.contacts{
+    background-color: rgba(135, 135, 221, 0.479);
+}
+

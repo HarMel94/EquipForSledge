@@ -1,0 +1,17 @@
+
+.jackal{
+    display: flex;
+}
+
+.jackal img{
+    padding-top: 5px;
+    width: 35%;
+    height: 35%;
+}
+
+.jackal h4{
+    padding: 120px;
+    font-family: Georgia, serif;
+    padding-bottom: 200px;
+    font-style:italic;
+}
