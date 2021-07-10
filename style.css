@@ -3,7 +3,6 @@ a{
     color:rgb(0, 0, 0)
 }
 
-
 .mainone{
     text-align: center;
     font-weight: 400;
@@ -20,8 +19,7 @@ a{
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-around;    
 }
 
 .comment{
@@ -50,7 +48,6 @@ a{
     width: 20%;
     height: 20%;
     padding: 70px;
-
 }
 
 .hamtext{
