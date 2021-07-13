@@ -28,3 +28,66 @@ a{
     padding-bottom: 200px;
     font-style:italic;
 }
+
+.chooseArmHead{
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.chooseArmPart{
+    display: flex;
+}
+
+.pBtnSize img{
+    height:85px;
+    width:75px;
+}
+
+.pHead{
+    position: absolute;    
+    padding-left: 553px;
+    padding-top: 85px;
+}
+.pHead2{
+    position: absolute;
+    padding-left: 550px;
+    padding-top: 75px;
+}
+
+.pBody{
+    position: absolute;   
+    padding-left: 530px;
+    padding-top: 208px;
+}
+
+.pBody2{
+    position: absolute;    
+    padding-left: 484px;
+    padding-top: 200px;
+}
+
+.pLeft{
+    position: absolute;    
+    padding-left: 682px;
+    padding-top: 215px;
+}
+
+.pRight{
+    position: absolute;    
+    padding-left: 205px;
+    padding-top: 215px;
+}
+
+.pLegs{
+    position: absolute;    
+    padding-left: 530px;
+    padding-top: 435px;
+    padding-bottom: 80px;
+}
+
+.pLegs2{
+    position: absolute;
+    padding-left: 510px;
+    padding-top: 475px;
+}

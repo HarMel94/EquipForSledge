@@ -3,21 +3,20 @@
 
 //ADD BUTTON 
 
-const btnArr = []
-
-function hammerBtn(unicId){
-    const bot = document.querySelector(`${unicId}`).addEventListener(
-        "click", () => {
-            console.log("add")
+function btns(btn,showHam){
+    document.querySelectorAll(btn).forEach((e, i) => {
+        e.addEventListener("click", () => {
+            showHam.innerHTML = `<div> You choose
+                                    <p> 
+                                    <img src="hammers\\${i + 1}.png"> 
+                                    </p> </div>`
+        })
     })
 }
 
-hammerBtn("#hambtn1")
-hammerBtn("#hambtn2")
-hammerBtn("#hambtn3")
-hammerBtn("#hambtn4")
-hammerBtn("#hambtn5")
+let choosedHamPlace = document.querySelector(".choosedHam")
 
+btns("button", choosedHamPlace)
 
 
 //MESSAGE FROM INPUT

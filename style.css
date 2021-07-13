@@ -44,14 +44,15 @@ a{
     margin-right: 100px;
 }
 
-.hamimg{
-    width: 20%;
-    height: 20%;
-    padding: 70px;
+.ham img{
+    margin-top: 50px;
+    width: 70%;
+    height: 70%; 
+    padding: 40px; 
 }
 
-.hamtext{
-    padding: 120px;
+.ham p{
+    padding: 100px;
     font-family: Georgia, serif;
     
 }
@@ -60,6 +61,11 @@ a{
     margin-top: 150px;
     width: 70px;
     height: 60px;
+}
+
+.choosedHam{
+    display: flex;
+    margin-left: 560px;
 }
 
 .warn{
@@ -80,7 +86,6 @@ a{
     margin-bottom: 30px;
     line-height: 40px;
 }
-
    
 .soonTimer .timer{    
     margin-top: 40px;
@@ -98,8 +103,6 @@ a{
     font-size: 56px;
 }
 
-
 .contacts{
     background-color: rgba(135, 135, 221, 0.479);
 }
-

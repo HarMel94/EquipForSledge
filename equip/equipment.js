@@ -13,7 +13,7 @@ function showArr(arr,elem) {
         }
     }
     document.querySelector(elem).innerHTML = out
-    document.querySelector(".unitLength").innerHTML = "You choose " + arr.length + " units"
+    // document.querySelector(".unitLength").innerHTML = "You choose " + arr.length + " units" //LENGTH
 }
 
 showArr(mainArr,".unitImg")
@@ -38,15 +38,17 @@ function addInKnifeArr() {
     showArr(knifeArr,".unitImg3")
 }
 
+
+
 document.querySelector(".addMainArr").addEventListener("click", addInMainArr)
 document.querySelector(".addPistolArray").addEventListener("click", addInPistolArr)
 document.querySelector(".adaKnifeArray").addEventListener("click", addInKnifeArr)
 
 
 
-//  STUGUM
-    // if(index > 50) {
-    //     console.log("Shata")
-    // } else if(index < 0) {
-    //     console.log("qica")
-    // }
+
+// if(index > 50) {             //  STUGUM
+//     console.log("Shata")
+// } else if(index < 0) {
+//     console.log("qica")
+// }
