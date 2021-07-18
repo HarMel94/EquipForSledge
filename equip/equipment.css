@@ -28,6 +28,30 @@ a{
     font-style:italic;
 }
 
+.container{
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+}
+
+.slider{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.slider-line{
+    height: 200px;
+    width: 800px;
+    background: rgb(97, 97, 168);
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 0.5s;
+}
+
 .unitImg{
     padding-top: 25px ;  
     padding:  10px; 
@@ -59,3 +83,15 @@ a{
     font-family: Georgia, serif;
     font-style:italic;
 }
+
+.mainone{
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.contacts{
+    background-color: rgba(135, 135, 221, 0.479);
+}
+
+

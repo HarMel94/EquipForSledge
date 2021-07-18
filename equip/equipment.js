@@ -39,7 +39,6 @@ function addInKnifeArr() {
 }
 
 
-
 document.querySelector(".addMainArr").addEventListener("click", addInMainArr)
 document.querySelector(".addPistolArray").addEventListener("click", addInPistolArr)
 document.querySelector(".adaKnifeArray").addEventListener("click", addInKnifeArr)
@@ -52,3 +51,26 @@ document.querySelector(".adaKnifeArray").addEventListener("click", addInKnifeArr
 // } else if(index < 0) {
 //     console.log("qica")
 // }
+
+
+
+let slidePx = 0
+const sliderLine = document.querySelector(".slider-line")
+
+document.querySelector(".slider-next").addEventListener("click", () => {
+    slidePx += 200
+        if(slidePx > 600){
+            slidePx = 0
+        }
+    sliderLine.style.left = -slidePx + "px"    
+})
+
+document.querySelector(".slider-prev").addEventListener("click", () => {
+    slidePx -= 200
+        if(slidePx < 0){
+            slidePx = 600
+        }
+    sliderLine.style.left = -slidePx + "px"    
+})
+
+//  WRITE FUNCTION FOR SLIDER  BUTTONS

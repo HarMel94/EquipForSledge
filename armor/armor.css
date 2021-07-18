@@ -91,3 +91,17 @@ a{
     padding-left: 510px;
     padding-top: 475px;
 }
+
+.footer{
+    padding-top: 590px;
+}
+
+.mainone{
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.contacts{
+    background-color: rgba(135, 135, 221, 0.479);
+}
