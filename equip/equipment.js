@@ -1,41 +1,58 @@
+//   UNITS
+
 const mainArr = [ ]
 const pistolArr = [ ]
 const knifeArr = [ ]
 
-function showArr(arr,elem) {
-    let out = ""
+function showArray(arr,elem) {
+    let show = ""
     for(let i = 0; i < arr.length; i++ ) {
         if(arr[i] !== undefined) {
-            out += `<div>
+            show += `<div>
                         <img src="img02\\${arr[i]}.png">
                         <!--<span>${i}</span>-->
                     </div>`
         }
     }
-    document.querySelector(elem).innerHTML = out
+    document.querySelector(elem).innerHTML = show
     // document.querySelector(".unitLength").innerHTML = "You choose " + arr.length + " units" //LENGTH
 }
 
-showArr(mainArr,".unitImg")
-showArr(pistolArr,".unitImg2")
-showArr(knifeArr,".unitImg3")
+showArray(mainArr,".unitImg")
+showArray(pistolArr,".unitImg2")
+showArray(knifeArr,".unitImg3")
 
 function addInMainArr() {
-    let index = parseInt( document.querySelector(".MainIndex").value)  
+    let index = parseInt( document.querySelector(".MainIndex").value) 
+    if(index >= 2){
+        alert('Too match units')
+        index = null
+    }
+    // index >= 2 ?  alert("Too match units") : false;
     mainArr[index] = document.querySelector(".mainArray").value
-    showArr(mainArr,".unitImg")
+    showArray(mainArr,".unitImg")
 }
 
 function addInPistolArr() {
-    let index = parseInt( document.querySelector(".pistolIndex").value)    
+    let index = parseInt( document.querySelector(".pistolIndex").value) 
+    if(index >= 3){
+        alert('Too match units')
+        index = null
+    }  
+    // index >= 1 ? alert("Too match units") : false; 
     pistolArr[index] = document.querySelector(".pistolArray").value 
-    showArr(pistolArr,".unitImg2")
+    showArray(pistolArr,".unitImg2")
 }
 
 function addInKnifeArr() {
-    let index = parseInt( document.querySelector(".knifeIndex").value)   
+    let index = parseInt( document.querySelector(".knifeIndex").value)  
+    if(index >= 3){
+        alert('Too match units')
+        index = null
+    } 
+    // index >= 2 ? alert("Too match units") : false;
     knifeArr[index] = document.querySelector(".knifeArray").value 
-    showArr(knifeArr,".unitImg3")
+    showArray(knifeArr,".unitImg3")
 }
 
 
@@ -44,33 +61,22 @@ document.querySelector(".addPistolArray").addEventListener("click", addInPistolA
 document.querySelector(".adaKnifeArray").addEventListener("click", addInKnifeArr)
 
 
+//  SLIDER
 
 
-// if(index > 50) {             //  STUGUM
-//     console.log("Shata")
-// } else if(index < 0) {
-//     console.log("qica")
-// }
-
-
-
-let slidePx = 0
-const sliderLine = document.querySelector(".slider-line")
+let sPx = 0
+let sliderLine = document.querySelector(".slider-line")
 
 document.querySelector(".slider-next").addEventListener("click", () => {
-    slidePx += 200
-        if(slidePx > 600){
-            slidePx = 0
-        }
-    sliderLine.style.left = -slidePx + "px"    
+    sPx += 200        
+    sPx > 600 ? sPx = 0 : false
+    sliderLine.style.left = -sPx + "px"    
 })
+
 
 document.querySelector(".slider-prev").addEventListener("click", () => {
-    slidePx -= 200
-        if(slidePx < 0){
-            slidePx = 600
-        }
-    sliderLine.style.left = -slidePx + "px"    
+    sPx -= 200        
+    sPx < 0 ? sPx = 600 : false;
+    sliderLine.style.left = -sPx + "px"    
 })
 
-//  WRITE FUNCTION FOR SLIDER  BUTTONS

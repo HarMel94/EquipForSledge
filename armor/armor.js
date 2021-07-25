@@ -14,7 +14,6 @@ chooseArm(".pBodyBtn1",".pBody2",`<img src=armbody/body/b1.png>`)
 chooseArm(".pBodyBtn2",".pBody2",`<img src=armbody/body/b2.png>`)
 chooseArm(".pBodyBtn3",".pBody2",`<img src=armbody/body/b3.png>`)
 
-
 chooseArm(".pLegsBtn1",".pLegs2",`<img src=armbody/legs/l1.png>`)
 chooseArm(".pLegsBtn2",".pLegs2",`<img src=armbody/legs/l2.png>`)
 chooseArm(".pLegsBtn3",".pLegs2",`<img src=armbody/legs/l3.png>`)

@@ -1,5 +1,3 @@
- "use strict"
-
 
 //ADD BUTTON 
 
@@ -14,9 +12,9 @@ function btns(btn,showHam){
     })
 }
 
-let choosedHamPlace = document.querySelector(".choosedHam")
+let choosedHamPlace = document.querySelector(".choosedHam");
 
-btns("button", choosedHamPlace)
+btns("button", choosedHamPlace);
 
 
 //MESSAGE FROM INPUT
@@ -24,18 +22,18 @@ btns("button", choosedHamPlace)
 function idea() {
     const inputMess = document.querySelector(".message"),
       messageBtn = document.querySelector(".mesBtn"),
-      messageVal = document.querySelector(".inputValue")
+      messageVal = document.querySelector(".inputValue");
     
     messageBtn.addEventListener("click", () => {
         setTimeout(() => {
             messageVal.innerHTML = "<div>You're massage is:</div>"
              + inputMess.value.split('').reverse().join('') 
-             + "<div>Is this some kinde joke.Type normal text.</div>"
-        },1000)        
-    })    
-}
+             + "<div>Is this some kinde joke? Type normal text.</div>"
+        },1000);        
+    });    
+};
 
-idea()
+idea();
 
 
 //TIMER

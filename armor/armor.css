@@ -44,6 +44,12 @@ a{
     width:75px;
 }
 
+.soonHands{
+    height:80px;
+    width:282px;
+    font-size: 25px;
+}
+
 .pHead{
     position: absolute;    
     padding-left: 553px;
